@@ -1278,8 +1278,12 @@ section { padding: 96px 0; }
         url('assets/group-bookings.jpg') center/cover no-repeat;
     background-color: #0a140a;
 }
-/* airport-transfer.jpg not yet in assets — gradient fallback */
-.img-transfer  { background: linear-gradient(160deg, #0a0a14 0%, #14142a 40%, #1e2850 65%, #2a3a70 100%); }
+.img-transfer {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('assets/airport-transfer.jpg') center/cover no-repeat;
+    background-color: #0a0a14;
+}
 
 .offer-img::before {
     content: '';
