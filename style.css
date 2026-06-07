@@ -1247,12 +1247,38 @@ section { padding: 96px 0; }
 .offer-card-sm h3  { font-size: 1.05rem; }
 .offer-card-sm p   { display: none; }
 
-/* Offer card gradient backgrounds — darker luxury versions */
-.img-lagos     { background: linear-gradient(160deg, #0d1a2e 0%, #1a3a60 40%, #2a5a90 70%, #3a80c0 100%); }
-.img-corporate { background: linear-gradient(160deg, #080d12 0%, #0d2035 40%, #1a3a60 70%, #2a5a90 100%); }
-.img-festive   { background: linear-gradient(160deg, #140a00 0%, #3a1e00 35%, #7a4800 65%, var(--gold-dark) 100%); }
-.img-weekend   { background: linear-gradient(160deg, #04141a 0%, #0a2a38 40%, #1a5060 65%, #2a7080 100%); }
-.img-group     { background: linear-gradient(160deg, #0a140a 0%, #142414 40%, #1e4030 65%, #2a6040 100%); }
+/* Offer card backgrounds — real photos with dark overlay */
+.img-lagos {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('assets/eko-hotels.jpg') center/cover no-repeat;
+    background-color: #0d1a2e;
+}
+.img-corporate {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('assets/radisson-blu.jpg') center/cover no-repeat;
+    background-color: #080d12;
+}
+.img-festive {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('assets/lagos-continental.jpg') center/cover no-repeat;
+    background-color: #140a00;
+}
+.img-weekend {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('assets/weekend-getaway.jpg') center/cover no-repeat;
+    background-color: #04141a;
+}
+.img-group {
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('assets/group-bookings.jpg') center/cover no-repeat;
+    background-color: #0a140a;
+}
+/* airport-transfer.jpg not yet in assets — gradient fallback */
 .img-transfer  { background: linear-gradient(160deg, #0a0a14 0%, #14142a 40%, #1e2850 65%, #2a3a70 100%); }
 
 .offer-img::before {
