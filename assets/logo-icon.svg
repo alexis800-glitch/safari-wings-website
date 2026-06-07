@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38" width="50" height="38" role="img" aria-label="Safari Wings Travel icon">
+  <title>Safari Wings Travel</title>
+  <!--
+    CONCEPT: Triple Wing Sweep
+    Three elegant upward-curving strokes fan out from a single anchor point,
+    evoking wings opening for flight — clean, modern, premium.
+    Colors: deep navy (primary), royal blue (secondary), gold (accent).
+  -->
+
+  <!-- Stroke 3 — gold accent, lowest sweep, drawn first so navy sits on top -->
+  <path
+    d="M 4 34 C 12 32 24 29 38 28"
+    stroke="#c8922a"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Stroke 2 — royal blue, mid sweep -->
+  <path
+    d="M 4 34 C 15 28 28 21 46 18"
+    stroke="#1e5bbc"
+    stroke-width="3"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Stroke 1 — deep navy, highest sweep, thickest -->
+  <path
+    d="M 4 34 C 16 24 33 12 48 4"
+    stroke="#0d2b4e"
+    stroke-width="3.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Origin anchor dot — gold -->
+  <circle cx="4" cy="34" r="2.8" fill="#c8922a" />
+</svg>
