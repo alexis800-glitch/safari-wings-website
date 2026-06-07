@@ -18,19 +18,30 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ---- Mobile hamburger menu ----
+// ---- Mobile hamburger menu — slide-in drawer ----
+function closeNav() {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.classList.remove('nav-open');
+    document.body.style.overflow = '';
+}
+
 hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     hamburger.classList.toggle('open', isOpen);
+    document.body.classList.toggle('nav-open', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
 navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('open');
-        document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeNav);
+});
+
+// Close drawer when tapping the dim backdrop
+document.addEventListener('click', e => {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+        closeNav();
+    }
 });
 
 // ---- Date inputs: set today as minimum ----

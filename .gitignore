@@ -5,7 +5,7 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
-.claude/
+.claude/settings.local.json
 .mcp.json
 Safari_Wings_Website/
 *.zip
